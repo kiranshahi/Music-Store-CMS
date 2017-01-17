@@ -1,0 +1,31 @@
+﻿@using MusicStore.Models
+@model List<MusicStore.Models.Genre>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tablebody>
+        <tr>
+            <td>ID</td>
+            <td>Genre Name</td>
+            <td>Description</td>
+            <td>Details</td>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.GenreId</td>
+                <td>@item.GenreName</td>
+                <td>@item.Description</td>
+                <td><a href="/Genre/Details/@item.GenreId">View</a></td>
+            </tr>
+        }
+    </tablebody>
+</table>
+

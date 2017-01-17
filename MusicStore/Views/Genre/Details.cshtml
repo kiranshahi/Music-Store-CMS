@@ -1,0 +1,19 @@
+﻿@model MusicStore.Models.Genre
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-offset-3">
+            <h2>Details</h2>
+
+            @Model.GenreId
+            <hr/>
+            @Model.GenreName
+            <hr/>
+            @Model.Description
+        </div>
+    </div>
+</div>

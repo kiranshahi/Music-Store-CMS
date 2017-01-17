@@ -16,7 +16,7 @@ namespace MusicStore
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Album", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

@@ -2,8 +2,8 @@
 
 ---
 
-This project consist of following features:
+### This project consist of following features:
 
-*Album: Create/Update/Delete
-*Genre: Create/Update/Delete
-*Artist: Create/Update/Delete
+* Album: Create/Update/Delete
+* Genre: Create/Update/Delete
+* Artist: Create/Update/Delete

@@ -1,5 +1,4 @@
-﻿
-body{
+﻿body{
     margin-top:30px;
     padding-top: 50px;
     background:#eee;
@@ -11,7 +10,7 @@ body{
     margin-top: 12px;
     background: #fff;
     padding: 4px;
-        -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
 }
 
@@ -134,7 +133,6 @@ body{
     padding: 9px 0;
     width: 100%
 }
-
 .product-block .product-deatil p.price-container span,
 .product-content .product-deatil p.price-container span,
 .product-entry .product-deatil p.price-container span,

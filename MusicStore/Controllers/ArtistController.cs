@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MusicStore.Models;
 
 namespace MusicStore.Controllers
 {
     public class ArtistController : Controller
     {
+        private db _db = new db();
         // GET: Artist
         public ActionResult Index()
         {
-            return View();
+            var artistList = _db.GetArtistsDetails();
+            return View(artistList);
         }
 
         // GET: Artist/Details/5

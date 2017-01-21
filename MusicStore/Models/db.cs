@@ -35,5 +35,16 @@ namespace MusicStore.Models
             };
             return albums;
         }
+
+        public List<Artist> GetArtistsDetails()
+        {
+            var artists = new List<Artist>
+            {
+                new Artist {ArtistId = 1, Name = "Eminem 1"},
+                new Artist {ArtistId = 2, Name = "Eminem 2"},
+                new Artist {ArtistId = 3, Name = "Eminem 3"},
+            };
+            return artists;
+        }
     }
 }

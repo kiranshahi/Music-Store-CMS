@@ -4,8 +4,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@foreach (var artist in Model)
-{
-    @artist.ArtistId
-    @artist.Name
-}
+<div class="container">
+    @foreach (var artist in Model)
+            {
+                <div class="row">
+                    @artist.ArtistId
+                    @artist.Name
+                </div>
+    }
+
+    </div>

@@ -9,5 +9,6 @@ namespace MusicStore.Models
     {
         public int ArtistId { get; set; }
         public string Name { get; set; }
+        public string Image { get; set; }
     }
 }

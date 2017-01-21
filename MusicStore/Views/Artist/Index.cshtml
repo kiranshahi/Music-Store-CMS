@@ -5,12 +5,17 @@
 }
 
 <div class="container">
-    @foreach (var artist in Model)
-            {
-                <div class="row">
-                    @artist.ArtistId
-                    @artist.Name
-                </div>
-    }
-
-    </div>
+    <table class="table table-bordered">
+        <tr class="active">
+            <td>S. N</td>
+            <td>Name</td>
+        </tr>
+        @foreach (var artist in Model)
+        {
+            <tr>
+                <td>@artist.ArtistId</td>
+                <td>@artist.Name</td>
+            </tr>
+        }
+    </table>
+</div>

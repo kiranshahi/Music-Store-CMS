@@ -1,4 +1,5 @@
-﻿@model List<MusicStore.Models.Album>
+﻿@using System.Web.UI.WebControls
+@model List<MusicStore.Models.Album>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -42,7 +43,8 @@
                     <div class="product-info smart-form">
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-6">
-                                <a href="/Album/Details/@item.AlbumId" class="btn btn-success">Details</a>
+                                @Html.ActionLink("View Deails", "Details", new { id = item.AlbumId }, new { @class = "btn btn-success" })
+                                
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-6">
                                 <div class="rating">
